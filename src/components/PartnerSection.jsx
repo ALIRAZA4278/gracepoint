@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const PartnerSection = ({ onOpenFindStaffModal }) => {
   return (
-    <section id="partner" className="relative w-full overflow-hidden py-8 sm:py-10 md:py-12 lg:py-16">
+    <section id="partner" className="relative w-full overflow-hidden py-8 sm:py-10 md:py-12 lg:py-16 bg-white">
       <div
         className="absolute inset-0 z-0"
         style={{
