@@ -1,0 +1,97 @@
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+
+const CommunitySection = () => {
+  const impacts = [
+    {
+      id: '01',
+      description: 'Partner with healthcare training programs to support the next generation of caregivers'
+    },
+    {
+      id: '02',
+      description: 'Sponsor local job fairs and healthcare education initiatives'
+    },
+    {
+      id: '03',
+      description: 'Provide mentorship and career resources for new healthcare professionals'
+    },
+    {
+      id: '04',
+      description: 'Support underserved communities by ensuring access to skilled healthcare staff'
+    }
+  ];
+
+  return (
+    <section id="community" className="relative w-full overflow-visible pb-32">
+      <div
+        className="absolute top-0 left-0 right-0 h-[70%] z-0"
+        style={{
+          backgroundImage: "url('/home/communitybg.png')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      ></div>
+
+      <div className="max-w-[1400px] mx-auto relative z-10 px-4 md:px-8 pt-16 md:pt-20">
+        {/* Header Section */}
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-12 md:mb-16">
+          <div className="mb-6 lg:mb-0 lg:max-w-[600px]">
+            <h2 className="text-4xl md:text-5xl font-extrabold font-urbanist text-white mb-4">
+              Community Impact
+            </h2>
+            <p className="text-base md:text-lg font-urbanist text-white leading-relaxed border-l-4 border-white pl-4">
+              GracePoint Medical Staffing is committed to making a difference not only in healthcare facilities but also in the communities we serve.
+            </p>
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Link
+              href="#find-staff"
+              className="bg-white text-[#0052A3] px-8 py-3 rounded text-base font-urbanist font-semibold hover:bg-gray-100 transition-all duration-300 text-center"
+            >
+              Find Staff Today
+            </Link>
+            <Link
+              href="#start-career"
+              className="bg-[#E85988] text-white px-8 py-3 rounded text-base font-urbanist font-semibold hover:bg-[#d14873] transition-all duration-300 text-center"
+            >
+              Start Your Career
+            </Link>
+          </div>
+        </div>
+
+        {/* Impact Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {impacts.map((impact) => (
+            <div
+              key={impact.id}
+              className="relative bg-white p-6 rounded shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
+            >
+              <div className="absolute inset-0 opacity-5 pointer-events-none">
+                <Image
+                  src="/home/partnericon.png"
+                  alt=""
+                  width={100}
+                  height={100}
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div className="relative">
+                <h3 className="text-[#E85988] text-3xl font-bold font-urbanist mb-4">
+                  {impact.id}
+                </h3>
+                <p className="text-gray-900 font-urbanist text-sm md:text-base leading-relaxed">
+                  {impact.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default CommunitySection;

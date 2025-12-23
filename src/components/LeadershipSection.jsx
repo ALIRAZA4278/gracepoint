@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const LeadershipSection = () => {
   return (
-    <section className="relative w-full overflow-visible bg-[#0052A3] pt-40 md:pt-48 lg:pt-56 pb-16 md:pb-20">
+    <section id="leadership" className="relative w-full overflow-visible bg-[#0052A3] pt-40   ">
       <div
         className="absolute inset-0 z-0 pointer-events-none"
         style={{

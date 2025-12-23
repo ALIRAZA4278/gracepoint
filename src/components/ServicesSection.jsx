@@ -43,9 +43,9 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="relative w-full py-16 md:py-20 bg-white overflow-hidden">
+    <section id="services" className="relative w-full py-16 md:py-20 bg-white overflow-hidden">
       <div
-        className="absolute inset-0 opacity-10 z-0"
+        className="absolute inset-0 z-0"
         style={{
           backgroundImage: "url('/home/servicebg.png')",
           backgroundSize: 'cover',
@@ -56,7 +56,7 @@ const ServicesSection = () => {
 
       <div className="max-w-[1400px] mx-auto relative z-10 px-4 md:px-8">
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold font-urbanist text-[#0052A3] mb-4">
+          <h2 className="text-4xl md:text-5xl font-extrabold font-urbanist text-[#0052A3] mb-4">
             OUR SERVICES
           </h2>
           <p className="text-lg md:text-xl font-semibold font-urbanist text-gray-900 mb-4">

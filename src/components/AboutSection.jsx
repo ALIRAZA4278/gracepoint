@@ -3,9 +3,9 @@ import Image from 'next/image';
 
 const AboutSection = () => {
   return (
-    <section className="relative w-full py-20 px-8 bg-white overflow-hidden">
+    <section id="about" className="relative w-full py-20 px-8 bg-white overflow-hidden">
       <div
-        className="absolute inset-0 opacity-30 z-0"
+        className="absolute inset-0  z-0"
         style={{
           backgroundImage: "url('/home/aboutbg.png')",
           backgroundSize: 'cover',
@@ -17,7 +17,7 @@ const AboutSection = () => {
       <div className="max-w-[1400px] mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h2 className="text-[#0052A3] text-5xl font-bold font-urbanist mb-6">
+            <h2 className="text-[#0052A3] text-5xl font-extrabold font-urbanist mb-6">
               ABOUT US
             </h2>
 
