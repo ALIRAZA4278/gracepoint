@@ -160,7 +160,7 @@ const ContactSection = () => {
                   id="fullName"
                   name="fullName"
                   placeholder="Enter Your Full Name"
-                  className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-md font-urbanist text-sm sm:text-base focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
+                  className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border text-black border-gray-300 rounded-md font-urbanist text-sm sm:text-base focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
                 />
               </div>
 
