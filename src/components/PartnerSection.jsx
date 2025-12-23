@@ -1,5 +1,7 @@
+'use client';
 import React from 'react';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 const PartnerSection = ({ onOpenFindStaffModal }) => {
   return (
@@ -16,65 +18,167 @@ const PartnerSection = ({ onOpenFindStaffModal }) => {
 
       <div className="max-w-[1200px] mx-auto relative z-10 px-4 sm:px-6 md:px-8">
         {/* Main Heading */}
-        <div className="text-center mb-12 sm:mb-16 md:mb-20">
+        <motion.div
+          initial={{ y: -30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+          className="text-center mb-12 sm:mb-16 md:mb-20"
+        >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold font-urbanist text-[#0052A3] mb-4 sm:mb-5 md:mb-6">
             Why Partner With Us?
           </h2>
           <p className="text-sm sm:text-base md:text-lg font-urbanist text-gray-900 max-w-[90%] sm:max-w-[700px] md:max-w-[900px] mx-auto px-4">
             Healthcare facilities need dependable staffing solutions — and that's where GracePoint steps in.
           </p>
-        </div>
+        </motion.div>
 
         {/* Desktop Layout with Circle */}
         <div className="hidden lg:block relative max-w-[1300px] mx-auto mb-16 py-12">
           {/* Dashed Lines */}
-          <svg className="absolute inset-0 w-full h-full pointer-events-none" style={{ zIndex: 1 }}>
-            <line x1="30%" y1="28%" x2="43%" y2="50%" stroke="#0052A3" strokeWidth="1" strokeDasharray="5,5" />
-            <line x1="30%" y1="72%" x2="43%" y2="50%" stroke="#0052A3" strokeWidth="1" strokeDasharray="5,5" />
-            <line x1="57%" y1="50%" x2="70%" y2="28%" stroke="#0052A3" strokeWidth="1" strokeDasharray="5,5" />
-            <line x1="57%" y1="50%" x2="70%" y2="72%" stroke="#0052A3" strokeWidth="1" strokeDasharray="5,5" />
-          </svg>
+          <motion.svg
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className="absolute inset-0 w-full h-full pointer-events-none"
+            style={{ zIndex: 1 }}
+          >
+            <motion.line
+              initial={{ pathLength: 0 }}
+              whileInView={{ pathLength: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.7 }}
+              x1="30%" y1="28%" x2="43%" y2="50%" stroke="#0052A3" strokeWidth="1" strokeDasharray="5,5"
+            />
+            <motion.line
+              initial={{ pathLength: 0 }}
+              whileInView={{ pathLength: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.8 }}
+              x1="30%" y1="72%" x2="43%" y2="50%" stroke="#0052A3" strokeWidth="1" strokeDasharray="5,5"
+            />
+            <motion.line
+              initial={{ pathLength: 0 }}
+              whileInView={{ pathLength: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.9 }}
+              x1="57%" y1="50%" x2="70%" y2="28%" stroke="#0052A3" strokeWidth="1" strokeDasharray="5,5"
+            />
+            <motion.line
+              initial={{ pathLength: 0 }}
+              whileInView={{ pathLength: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 1 }}
+              x1="57%" y1="50%" x2="70%" y2="72%" stroke="#0052A3" strokeWidth="1" strokeDasharray="5,5"
+            />
+          </motion.svg>
 
           <div className="relative" style={{ minHeight: '520px' }}>
             {/* Feature 01 - Top Left */}
-            <div className="absolute top-[8%] left-0 right-[63%] text-right pr-[70px]" style={{ zIndex: 10 }}>
+            <motion.div
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="absolute top-[8%] left-0 right-[63%] text-right pr-[70px]"
+              style={{ zIndex: 10 }}
+            >
               <h3 className="text-[#0052A3] text-xl xl:text-2xl font-bold font-urbanist mb-1">01</h3>
               <p className="text-gray-900 font-urbanist text-sm xl:text-base leading-relaxed">
                 24/7 availability for<br />urgent staffing needs.
               </p>
-              <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-3 h-3 bg-[#0052A3] rounded-full"></div>
-            </div>
+              <motion.div
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.3, delay: 0.6 }}
+                className="absolute right-0 top-1/2 transform -translate-y-1/2 w-3 h-3 bg-[#0052A3] rounded-full shadow-lg"
+              ></motion.div>
+            </motion.div>
 
             {/* Feature 02 - Bottom Left */}
-            <div className="absolute bottom-[8%] left-0 right-[63%] text-right pr-[70px]" style={{ zIndex: 10 }}>
+            <motion.div
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="absolute bottom-[8%] left-0 right-[63%] text-right pr-[70px]"
+              style={{ zIndex: 10 }}
+            >
               <h3 className="text-[#0052A3] text-xl xl:text-2xl font-bold font-urbanist mb-1">02</h3>
               <p className="text-gray-900 font-urbanist text-sm xl:text-base leading-relaxed">
                 Thorough screening,<br />credentialing, and<br />compliance checks.
               </p>
-              <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-3 h-3 bg-[#0052A3] rounded-full"></div>
-            </div>
+              <motion.div
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.3, delay: 0.7 }}
+                className="absolute right-0 top-1/2 transform -translate-y-1/2 w-3 h-3 bg-[#0052A3] rounded-full shadow-lg"
+              ></motion.div>
+            </motion.div>
 
             {/* Feature 03 - Top Right */}
-            <div className="absolute top-[8%] right-0 left-[63%] text-left pl-[70px]" style={{ zIndex: 10 }}>
-              <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-3 h-3 bg-[#0052A3] rounded-full"></div>
+            <motion.div
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              className="absolute top-[8%] right-0 left-[63%] text-left pl-[70px]"
+              style={{ zIndex: 10 }}
+            >
+              <motion.div
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.3, delay: 0.8 }}
+                className="absolute left-0 top-1/2 transform -translate-y-1/2 w-3 h-3 bg-[#0052A3] rounded-full shadow-lg"
+              ></motion.div>
               <h3 className="text-[#0052A3] text-xl xl:text-2xl font-bold font-urbanist mb-1">03</h3>
               <p className="text-gray-900 font-urbanist text-sm xl:text-base leading-relaxed">
                 Competitive, flexible<br />pricing models.
               </p>
-            </div>
+            </motion.div>
 
             {/* Feature 04 - Bottom Right */}
-            <div className="absolute bottom-[8%] right-0 left-[63%] text-left pl-[70px]" style={{ zIndex: 10 }}>
-              <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-3 h-3 bg-[#0052A3] rounded-full"></div>
+            <motion.div
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              className="absolute bottom-[8%] right-0 left-[63%] text-left pl-[70px]"
+              style={{ zIndex: 10 }}
+            >
+              <motion.div
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.3, delay: 0.9 }}
+                className="absolute left-0 top-1/2 transform -translate-y-1/2 w-3 h-3 bg-[#0052A3] rounded-full shadow-lg"
+              ></motion.div>
               <h3 className="text-[#0052A3] text-xl xl:text-2xl font-bold font-urbanist mb-1">04</h3>
               <p className="text-gray-900 font-urbanist text-sm xl:text-base leading-relaxed">
                 Dedicated account<br />managers for ongoing<br />support.
               </p>
-            </div>
+            </motion.div>
 
             {/* Center Icon with Gray Circle Background */}
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" style={{ zIndex: 20 }}>
-              <div className="absolute inset-0 w-[430px] h-[430px] rounded-full border-[55px] border-gray-200/45 transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2"></div>
+            <motion.div
+              initial={{ scale: 0, rotate: -180, opacity: 0 }}
+              whileInView={{ scale: 1, rotate: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              style={{ zIndex: 20 }}
+            >
+              <motion.div
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1, delay: 0.3 }}
+                className="absolute inset-0 w-[430px] h-[430px] rounded-full border-[55px] border-gray-200/45 transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 shadow-2xl"
+              ></motion.div>
               <div className="absolute inset-0 w-[400px] h-[400px] transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2"></div>
               <div className="relative w-[330px] h-[330px] flex items-center justify-center">
                 <Image
@@ -85,40 +189,90 @@ const PartnerSection = ({ onOpenFindStaffModal }) => {
                   className="w-[220px] h-[220px]"
                 />
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
 
         {/* Mobile & Tablet Layout - Card Grid */}
-        <div className="lg:hidden grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12 sm:mb-16">
-          <div className="bg-white p-6 rounded-lg shadow-lg border-t-4 border-[#0052A3]">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={{
+            hidden: { opacity: 0 },
+            visible: {
+              opacity: 1,
+              transition: { staggerChildren: 0.15 }
+            }
+          }}
+          className="lg:hidden grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12 sm:mb-16"
+        >
+          <motion.div
+            variants={{
+              hidden: { y: 50, opacity: 0 },
+              visible: { y: 0, opacity: 1, transition: { duration: 0.6 } }
+            }}
+            whileHover={{ y: -5, scale: 1.02 }}
+            className="bg-white p-6 rounded-lg shadow-2xl hover:shadow-[0_25px_50px_-12px_rgba(0,82,163,0.4)] transition-all duration-500 border-t-4 border-[#0052A3]"
+          >
             <h3 className="text-[#0052A3] text-2xl font-bold font-urbanist mb-3">01</h3>
             <p className="text-gray-900 font-urbanist text-sm sm:text-base leading-relaxed">
               24/7 availability for urgent staffing needs.
             </p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg border-t-4 border-[#0052A3]">
+          </motion.div>
+          <motion.div
+            variants={{
+              hidden: { y: 50, opacity: 0 },
+              visible: { y: 0, opacity: 1, transition: { duration: 0.6 } }
+            }}
+            whileHover={{ y: -5, scale: 1.02 }}
+            className="bg-white p-6 rounded-lg shadow-2xl hover:shadow-[0_25px_50px_-12px_rgba(0,82,163,0.4)] transition-all duration-500 border-t-4 border-[#0052A3]"
+          >
             <h3 className="text-[#0052A3] text-2xl font-bold font-urbanist mb-3">02</h3>
             <p className="text-gray-900 font-urbanist text-sm sm:text-base leading-relaxed">
               Thorough screening, credentialing, and compliance checks.
             </p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg border-t-4 border-[#0052A3]">
+          </motion.div>
+          <motion.div
+            variants={{
+              hidden: { y: 50, opacity: 0 },
+              visible: { y: 0, opacity: 1, transition: { duration: 0.6 } }
+            }}
+            whileHover={{ y: -5, scale: 1.02 }}
+            className="bg-white p-6 rounded-lg shadow-2xl hover:shadow-[0_25px_50px_-12px_rgba(0,82,163,0.4)] transition-all duration-500 border-t-4 border-[#0052A3]"
+          >
             <h3 className="text-[#0052A3] text-2xl font-bold font-urbanist mb-3">03</h3>
             <p className="text-gray-900 font-urbanist text-sm sm:text-base leading-relaxed">
               Competitive, flexible pricing models.
             </p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg border-t-4 border-[#0052A3]">
+          </motion.div>
+          <motion.div
+            variants={{
+              hidden: { y: 50, opacity: 0 },
+              visible: { y: 0, opacity: 1, transition: { duration: 0.6 } }
+            }}
+            whileHover={{ y: -5, scale: 1.02 }}
+            className="bg-white p-6 rounded-lg shadow-2xl hover:shadow-[0_25px_50px_-12px_rgba(0,82,163,0.4)] transition-all duration-500 border-t-4 border-[#0052A3]"
+          >
             <h3 className="text-[#0052A3] text-2xl font-bold font-urbanist mb-3">04</h3>
             <p className="text-gray-900 font-urbanist text-sm sm:text-base leading-relaxed">
               Dedicated account managers for ongoing support.
             </p>
-          </div>
+          </motion.div>
 
           {/* Center Icon for Mobile */}
-          <div className="sm:col-span-2 flex justify-center py-8">
-            <div className="relative w-40 h-40 sm:w-48 sm:h-48">
+          <motion.div
+            variants={{
+              hidden: { scale: 0, rotate: -180, opacity: 0 },
+              visible: { scale: 1, rotate: 0, opacity: 1, transition: { duration: 0.8 } }
+            }}
+            className="sm:col-span-2 flex justify-center py-8"
+          >
+            <motion.div
+              animate={{ rotate: 360 }}
+              transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+              className="relative w-40 h-40 sm:w-48 sm:h-48 drop-shadow-2xl"
+            >
               <Image
                 src="/home/partnericon.png"
                 alt="GracePoint Partner Icon"
@@ -126,19 +280,27 @@ const PartnerSection = ({ onOpenFindStaffModal }) => {
                 height={192}
                 className="w-full h-full"
               />
-            </div>
-          </div>
-        </div>
+            </motion.div>
+          </motion.div>
+        </motion.div>
 
         {/* CTA Button */}
-        <div className="flex justify-center mt-6 sm:mt-8">
-          <button
+        <motion.div
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+          className="flex justify-center mt-6 sm:mt-8"
+        >
+          <motion.button
             onClick={onOpenFindStaffModal}
-            className="w-full sm:w-auto bg-[#0052A3] text-white px-8 sm:px-10 py-3 sm:py-3.5 rounded text-sm sm:text-base font-urbanist font-semibold hover:bg-[#003d7a] transition-all duration-300 text-center"
+            whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(0, 82, 163, 0.4)" }}
+            whileTap={{ scale: 0.95 }}
+            className="w-full sm:w-auto bg-[#0052A3] text-white px-8 sm:px-10 py-3 sm:py-3.5 rounded text-sm sm:text-base font-urbanist font-semibold hover:bg-[#003d7a] transition-all duration-300 text-center shadow-xl"
           >
             Request Staff Now
-          </button>
-        </div>
+          </motion.button>
+        </motion.div>
       </div>
     </section>
   );

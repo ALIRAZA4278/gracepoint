@@ -1,5 +1,7 @@
+'use client';
 import React from 'react';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 const ContactSection = () => {
   return (
@@ -17,8 +19,19 @@ const ContactSection = () => {
       <div className="max-w-[1400px] mx-auto relative z-10 px-4 sm:px-6 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-start">
           {/* Left Side - Contact Info */}
-          <div className="space-y-6 sm:space-y-8">
-            <div>
+          <motion.div
+            initial={{ x: -50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.7 }}
+            className="space-y-6 sm:space-y-8"
+          >
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold font-urbanist text-[#0052A3] mb-3 sm:mb-4">
                 CONTACT US
               </h2>
@@ -28,11 +41,18 @@ const ContactSection = () => {
               <p className="text-sm sm:text-base font-urbanist text-gray-700 leading-relaxed">
                 We're here to help — whether you're a facility looking for staff or a professional searching for your next role.
               </p>
-            </div>
+            </motion.div>
 
             <div className="space-y-5 sm:space-y-6">
               {/* Phone */}
-              <div className="flex items-start gap-3 sm:gap-4">
+              <motion.div
+                initial={{ x: -30, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                whileHover={{ x: 5 }}
+                className="flex items-start gap-3 sm:gap-4 bg-white/50 backdrop-blur-sm p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+              >
                 <div className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center">
                   <Image
                     src="/home/phone.png"
@@ -53,10 +73,17 @@ const ContactSection = () => {
                     +921 236 574 4
                   </a>
                 </div>
-              </div>
+              </motion.div>
 
               {/* Email */}
-              <div className="flex items-start gap-3 sm:gap-4">
+              <motion.div
+                initial={{ x: -30, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                whileHover={{ x: 5 }}
+                className="flex items-start gap-3 sm:gap-4 bg-white/50 backdrop-blur-sm p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+              >
                 <div className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center">
                   <Image
                     src="/home/email.png"
@@ -77,10 +104,17 @@ const ContactSection = () => {
                     info@gracepoint.com
                   </a>
                 </div>
-              </div>
+              </motion.div>
 
               {/* Address */}
-              <div className="flex items-start gap-3 sm:gap-4">
+              <motion.div
+                initial={{ x: -30, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.5 }}
+                whileHover={{ x: 5 }}
+                className="flex items-start gap-3 sm:gap-4 bg-white/50 backdrop-blur-sm p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+              >
                 <div className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center">
                   <Image
                     src="/home/address.png"
@@ -99,12 +133,18 @@ const ContactSection = () => {
                     East Legon, Accra, Ghana
                   </p>
                 </div>
-              </div>
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Right Side - Contact Form */}
-          <div className="bg-white rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 md:p-10 border-t-4 sm:border-t-[6px] border-[#0052A3]">
+          <motion.div
+            initial={{ x: 50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.7 }}
+            className="bg-white rounded-xl sm:rounded-2xl shadow-2xl p-6 sm:p-8 md:p-10 border-t-4 sm:border-t-[6px] border-[#0052A3] hover:shadow-[0_25px_50px_-12px_rgba(0,82,163,0.4)] transition-shadow duration-500"
+          >
             <h3 className="text-2xl sm:text-3xl font-bold font-urbanist text-center text-gray-900 mb-6 sm:mb-8">
               Get Inquiry
             </h3>
@@ -190,7 +230,7 @@ const ContactSection = () => {
                 Submit Now
               </button>
             </form>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

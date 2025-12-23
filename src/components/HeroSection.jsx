@@ -1,40 +1,65 @@
+'use client';
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const HeroSection = ({ onOpenCareerModal, onOpenFindStaffModal }) => {
   return (
     <section id="home" className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[800px] xl:h-[900px] flex items-center justify-center overflow-hidden">
-      <div
+      <motion.div
+        initial={{ scale: 1.1, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: "url('/home/hero.png')",
         }}
       >
         <div className="absolute inset-0 bg-black/20"></div>
-      </div>
+      </motion.div>
 
       <div className="relative z-10 w-full px-4 sm:px-6 md:px-8 text-center text-white flex flex-col items-center justify-center">
-        <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[120px] mb-4 sm:mb-6 md:mb-8 leading-tight font-bold italic text-white" style={{ fontFamily: 'serif' }}>
+        <motion.h1
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+          className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[120px] mb-4 sm:mb-6 md:mb-8 leading-tight font-bold italic text-white drop-shadow-2xl"
+          style={{ fontFamily: 'serif' }}
+        >
           Excellence in Care.<br />Guided by Purpose.
-        </h1>
+        </motion.h1>
 
-        <p className="font-urbanist text-sm sm:text-base md:text-lg lg:text-xl mb-6 sm:mb-8 md:mb-10 max-w-[90%] sm:max-w-[80%] md:max-w-[700px] lg:max-w-[950px] mx-auto leading-relaxed">
+        <motion.p
+          initial={{ y: 30, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
+          className="font-urbanist text-sm sm:text-base md:text-lg lg:text-xl mb-6 sm:mb-8 md:mb-10 max-w-[90%] sm:max-w-[80%] md:max-w-[700px] lg:max-w-[950px] mx-auto leading-relaxed drop-shadow-lg"
+        >
           GracePoint Medical Staffing provides reliable, flexible, and professional healthcare staffing solutions. Whether you're a facility in need of skilled staff or a healthcare professional seeking new opportunities, we make the connection seamless.
-        </p>
+        </motion.p>
 
-        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center w-full max-w-[400px] sm:max-w-none">
-          <button
+        <motion.div
+          initial={{ y: 30, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.7, ease: "easeOut" }}
+          className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center w-full max-w-[400px] sm:max-w-none"
+        >
+          <motion.button
             onClick={onOpenFindStaffModal}
-            className="w-full sm:w-auto bg-[#0052A3] text-white px-6 sm:px-8 py-3 rounded text-sm sm:text-base font-urbanist font-semibold hover:bg-[#003d7a] transition-all duration-300 text-center"
+            whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(0, 82, 163, 0.4)" }}
+            whileTap={{ scale: 0.95 }}
+            className="w-full sm:w-auto bg-[#0052A3] text-white px-6 sm:px-8 py-3 rounded text-sm sm:text-base font-urbanist font-semibold hover:bg-[#003d7a] transition-all duration-300 text-center shadow-xl"
           >
             Find Staff Today
-          </button>
-          <button
+          </motion.button>
+          <motion.button
             onClick={onOpenCareerModal}
-            className="w-full sm:w-auto bg-[#E85988] text-white px-6 sm:px-8 py-3 rounded text-sm sm:text-base font-urbanist font-semibold hover:bg-[#d14873] transition-all duration-300 text-center"
+            whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(232, 89, 136, 0.4)" }}
+            whileTap={{ scale: 0.95 }}
+            className="w-full sm:w-auto bg-[#E85988] text-white px-6 sm:px-8 py-3 rounded text-sm sm:text-base font-urbanist font-semibold hover:bg-[#d14873] transition-all duration-300 text-center shadow-xl"
           >
             Start Your Career
-          </button>
-        </div>
+          </motion.button>
+        </motion.div>
       </div>
     </section>
   );

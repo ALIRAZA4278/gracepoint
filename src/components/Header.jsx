@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Header = ({ onOpenCareerModal, onOpenFindStaffModal }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -139,43 +140,87 @@ const Header = ({ onOpenCareerModal, onOpenFindStaffModal }) => {
         </div>
 
         {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="md:hidden bg-white border-t border-gray-200 py-4 px-4 space-y-3">
-            <Link
-              href="/#about"
-              className="block py-2 text-gray-800 hover:text-[#E85988] font-urbanist font-medium transition-colors"
-              onClick={() => setIsMenuOpen(false)}
+        <AnimatePresence>
+          {isMenuOpen && (
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: "auto", opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+              className="md:hidden bg-white border-t border-gray-200 overflow-hidden"
             >
-              ABOUT US
-            </Link>
-            <Link
-              href="/#services"
-              className="block py-2 text-gray-800 hover:text-[#E85988] font-urbanist font-medium transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              SERVICES
-            </Link>
-            <Link
-              href="/#partner"
-              className="block py-2 text-gray-800 hover:text-[#E85988] font-urbanist font-medium transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              WHY US?
-            </Link>
-            <Link
-              href="/#community"
-              className="block py-2 text-gray-800 hover:text-[#E85988] font-urbanist font-medium transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              COMMUNITY
-            </Link>
-            <Link
-              href="/#contact"
-              className="block py-2 text-gray-800 hover:text-[#E85988] font-urbanist font-medium transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              CONTACT US
-            </Link>
+              <motion.div
+                initial={{ y: -20 }}
+                animate={{ y: 0 }}
+                exit={{ y: -20 }}
+                transition={{ duration: 0.3 }}
+                className="py-4 px-4 space-y-3"
+              >
+                <motion.div
+                  initial={{ x: -20, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ delay: 0.1 }}
+                >
+                  <Link
+                    href="/#about"
+                    className="block py-2 text-gray-800 hover:text-[#E85988] font-urbanist font-medium transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    ABOUT US
+                  </Link>
+                </motion.div>
+                <motion.div
+                  initial={{ x: -20, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ delay: 0.15 }}
+                >
+                  <Link
+                    href="/#services"
+                    className="block py-2 text-gray-800 hover:text-[#E85988] font-urbanist font-medium transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    SERVICES
+                  </Link>
+                </motion.div>
+                <motion.div
+                  initial={{ x: -20, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ delay: 0.2 }}
+                >
+                  <Link
+                    href="/#partner"
+                    className="block py-2 text-gray-800 hover:text-[#E85988] font-urbanist font-medium transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    WHY US?
+                  </Link>
+                </motion.div>
+                <motion.div
+                  initial={{ x: -20, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ delay: 0.25 }}
+                >
+                  <Link
+                    href="/#community"
+                    className="block py-2 text-gray-800 hover:text-[#E85988] font-urbanist font-medium transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    COMMUNITY
+                  </Link>
+                </motion.div>
+                <motion.div
+                  initial={{ x: -20, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ delay: 0.3 }}
+                >
+                  <Link
+                    href="/#contact"
+                    className="block py-2 text-gray-800 hover:text-[#E85988] font-urbanist font-medium transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    CONTACT US
+                  </Link>
+                </motion.div>
 
             {/* Social Media Icons in Mobile Menu */}
             <div className="pt-3 border-t border-gray-200">
@@ -220,28 +265,35 @@ const Header = ({ onOpenCareerModal, onOpenFindStaffModal }) => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-3 pt-3">
-              <button
-                onClick={() => {
-                  setIsMenuOpen(false);
-                  onOpenFindStaffModal();
-                }}
-                className="bg-[#0052A3] text-white px-6 py-3 rounded font-urbanist font-medium hover:bg-[#003d7a] transition-colors text-center"
-              >
-                Find Staff Today
-              </button>
-              <button
-                onClick={() => {
-                  setIsMenuOpen(false);
-                  onOpenCareerModal();
-                }}
-                className="bg-[#E85988] text-white px-6 py-3 rounded font-urbanist font-medium hover:bg-[#d14873] transition-colors text-center"
-              >
-                Start Your Career
-              </button>
-            </div>
-          </div>
-        )}
+                <motion.div
+                  initial={{ y: 20, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ delay: 0.35 }}
+                  className="flex flex-col gap-3 pt-3"
+                >
+                  <button
+                    onClick={() => {
+                      setIsMenuOpen(false);
+                      onOpenFindStaffModal();
+                    }}
+                    className="bg-[#0052A3] text-white px-6 py-3 rounded font-urbanist font-medium hover:bg-[#003d7a] transition-colors text-center shadow-lg"
+                  >
+                    Find Staff Today
+                  </button>
+                  <button
+                    onClick={() => {
+                      setIsMenuOpen(false);
+                      onOpenCareerModal();
+                    }}
+                    className="bg-[#E85988] text-white px-6 py-3 rounded font-urbanist font-medium hover:bg-[#d14873] transition-colors text-center shadow-lg"
+                  >
+                    Start Your Career
+                  </button>
+                </motion.div>
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
 
     </header>
