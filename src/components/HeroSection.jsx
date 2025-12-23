@@ -22,7 +22,7 @@ const HeroSection = ({ onOpenCareerModal, onOpenFindStaffModal }) => {
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-          className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[120px] mb-4 sm:mb-6 md:mb-8 leading-tight font-bold italic text-white drop-shadow-2xl"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-[100px] mb-4 sm:mb-6 md:mb-8 leading-tight font-bold italic text-white drop-shadow-2xl"
           style={{ fontFamily: 'serif' }}
         >
           Excellence in Care.<br />Guided by Purpose.
