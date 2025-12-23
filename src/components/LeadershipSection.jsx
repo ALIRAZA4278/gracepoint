@@ -83,7 +83,7 @@ const LeadershipSection = ({ onOpenCareerModal, onOpenFindStaffModal }) => {
             <motion.div
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.3 }}
-              className="relative w-full h-[350px] sm:h-[450px] md:h-[550px] lg:h-[600px] -mt-20 sm:-mt-28 md:-mt-36 lg:-mt-56 z-[100] rounded-lg overflow-hidden shadow-2xl"
+              className="relative w-full h-[350px] sm:h-[450px] md:h-[550px] lg:h-[600px] -mt-20 sm:-mt-28 md:-mt-36 lg:-mt-56 z-[100] rounded-lg overflow-hidden"
             >
               <Image
                 src="/home/leadership.png"
