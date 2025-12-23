@@ -1,7 +1,6 @@
 import React from 'react';
-import Link from 'next/link';
 
-const HeroSection = () => {
+const HeroSection = ({ onOpenCareerModal, onOpenFindStaffModal }) => {
   return (
     <section id="home" className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[800px] xl:h-[900px] flex items-center justify-center overflow-hidden">
       <div
@@ -23,18 +22,18 @@ const HeroSection = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center w-full max-w-[400px] sm:max-w-none">
-          <Link
-            href="#find-staff"
+          <button
+            onClick={onOpenFindStaffModal}
             className="w-full sm:w-auto bg-[#0052A3] text-white px-6 sm:px-8 py-3 rounded text-sm sm:text-base font-urbanist font-semibold hover:bg-[#003d7a] transition-all duration-300 text-center"
           >
             Find Staff Today
-          </Link>
-          <Link
-            href="#start-career"
+          </button>
+          <button
+            onClick={onOpenCareerModal}
             className="w-full sm:w-auto bg-[#E85988] text-white px-6 sm:px-8 py-3 rounded text-sm sm:text-base font-urbanist font-semibold hover:bg-[#d14873] transition-all duration-300 text-center"
           >
             Start Your Career
-          </Link>
+          </button>
         </div>
       </div>
     </section>

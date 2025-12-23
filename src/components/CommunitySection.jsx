@@ -1,8 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 
-const CommunitySection = () => {
+const CommunitySection = ({ onOpenCareerModal, onOpenFindStaffModal }) => {
   const impacts = [
     {
       id: '01',
@@ -47,18 +46,18 @@ const CommunitySection = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full lg:w-auto">
-            <Link
-              href="#find-staff"
+            <button
+              onClick={onOpenFindStaffModal}
               className="bg-white text-[#0052A3] px-6 sm:px-8 py-2.5 sm:py-3 rounded text-sm sm:text-base font-urbanist font-semibold hover:bg-gray-100 transition-all duration-300 text-center"
             >
               Find Staff Today
-            </Link>
-            <Link
-              href="#start-career"
+            </button>
+            <button
+              onClick={onOpenCareerModal}
               className="bg-[#E85988] text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded text-sm sm:text-base font-urbanist font-semibold hover:bg-[#d14873] transition-all duration-300 text-center"
             >
               Start Your Career
-            </Link>
+            </button>
           </div>
         </div>
 

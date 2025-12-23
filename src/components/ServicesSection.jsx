@@ -1,8 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 
-const ServicesSection = () => {
+const ServicesSection = ({ onOpenCareerModal, onOpenFindStaffModal }) => {
   const services = [
     {
       id: '01',
@@ -98,18 +97,18 @@ const ServicesSection = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center items-center">
-          <Link
-            href="#find-staff"
+          <button
+            onClick={onOpenFindStaffModal}
             className="w-full sm:w-auto bg-[#0052A3] text-white px-6 sm:px-8 py-3 rounded text-sm sm:text-base font-urbanist font-semibold hover:bg-[#003d7a] transition-all duration-300 text-center sm:min-w-[200px]"
           >
             Find Staff Today
-          </Link>
-          <Link
-            href="#start-career"
+          </button>
+          <button
+            onClick={onOpenCareerModal}
             className="w-full sm:w-auto bg-[#E85988] text-white px-6 sm:px-8 py-3 rounded text-sm sm:text-base font-urbanist font-semibold hover:bg-[#d14873] transition-all duration-300 text-center sm:min-w-[200px]"
           >
             Start Your Career
-          </Link>
+          </button>
         </div>
       </div>
     </section>

@@ -1,8 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 
-const PartnerSection = () => {
+const PartnerSection = ({ onOpenFindStaffModal }) => {
   return (
     <section id="partner" className="relative w-full overflow-hidden py-8 sm:py-10 md:py-12 lg:py-16">
       <div
@@ -133,12 +132,12 @@ const PartnerSection = () => {
 
         {/* CTA Button */}
         <div className="flex justify-center mt-6 sm:mt-8">
-          <Link
-            href="#request-staff"
+          <button
+            onClick={onOpenFindStaffModal}
             className="w-full sm:w-auto bg-[#0052A3] text-white px-8 sm:px-10 py-3 sm:py-3.5 rounded text-sm sm:text-base font-urbanist font-semibold hover:bg-[#003d7a] transition-all duration-300 text-center"
           >
             Request Staff Now
-          </Link>
+          </button>
         </div>
       </div>
     </section>

@@ -4,9 +4,10 @@ import Footer from '@/components/Footer';
 
 const HipaaPage = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col">
       <Header />
 
+      <div className="grow">
       {/* Hero Section */}
       <section className="relative w-full h-[200px] sm:h-[250px] md:h-[300px] flex items-center justify-center overflow-hidden">
         <div
@@ -127,6 +128,7 @@ const HipaaPage = () => {
           </div>
         </div>
       </section>
+      </div>
 
       <Footer />
     </div>

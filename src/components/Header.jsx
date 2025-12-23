@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const Header = () => {
+const Header = ({ onOpenCareerModal, onOpenFindStaffModal }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -106,18 +106,18 @@ const Header = () => {
 
           {/* Desktop CTA Buttons */}
           <div className="hidden md:flex gap-3 lg:gap-4">
-            <Link
-              href="#find-staff"
+            <button
+              onClick={onOpenFindStaffModal}
               className="bg-[#0052A3] text-white px-4 lg:px-6 py-2 lg:py-3 rounded font-urbanist font-medium hover:bg-[#003d7a] transition-colors text-xs lg:text-sm whitespace-nowrap"
             >
               Find Staff Today
-            </Link>
-            <Link
-              href="#start-career"
+            </button>
+            <button
+              onClick={onOpenCareerModal}
               className="bg-[#E85988] text-white px-4 lg:px-6 py-2 lg:py-3 rounded font-urbanist font-medium hover:bg-[#d14873] transition-colors text-xs lg:text-sm whitespace-nowrap"
             >
               Start Your Career
-            </Link>
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -221,24 +221,29 @@ const Header = () => {
             </div>
 
             <div className="flex flex-col gap-3 pt-3">
-              <Link
-                href="#find-staff"
+              <button
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  onOpenFindStaffModal();
+                }}
                 className="bg-[#0052A3] text-white px-6 py-3 rounded font-urbanist font-medium hover:bg-[#003d7a] transition-colors text-center"
-                onClick={() => setIsMenuOpen(false)}
               >
                 Find Staff Today
-              </Link>
-              <Link
-                href="#start-career"
+              </button>
+              <button
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  onOpenCareerModal();
+                }}
                 className="bg-[#E85988] text-white px-6 py-3 rounded font-urbanist font-medium hover:bg-[#d14873] transition-colors text-center"
-                onClick={() => setIsMenuOpen(false)}
               >
                 Start Your Career
-              </Link>
+              </button>
             </div>
           </div>
         )}
       </div>
+
     </header>
   );
 };

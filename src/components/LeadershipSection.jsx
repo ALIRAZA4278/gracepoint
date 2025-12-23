@@ -1,8 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 
-const LeadershipSection = () => {
+const LeadershipSection = ({ onOpenCareerModal, onOpenFindStaffModal }) => {
   return (
     <section id="leadership" className="relative w-full overflow-visible pt-20 sm:pt-28 md:pt-32 lg:pt-40">
       <div
@@ -28,18 +27,18 @@ const LeadershipSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6">
-              <Link
-                href="#find-staff"
+              <button
+                onClick={onOpenFindStaffModal}
                 className="bg-white text-[#0052A3] px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 rounded text-xs sm:text-sm md:text-base font-urbanist font-semibold hover:bg-gray-100 transition-all duration-300 text-center"
               >
                 Find Staff Today
-              </Link>
-              <Link
-                href="#start-career"
+              </button>
+              <button
+                onClick={onOpenCareerModal}
                 className="bg-[#E85988] text-white px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 rounded text-xs sm:text-sm md:text-base font-urbanist font-semibold hover:bg-[#d14873] transition-all duration-300 text-center"
               >
                 Start Your Career
-              </Link>
+              </button>
             </div>
           </div>
 
