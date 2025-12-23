@@ -47,7 +47,7 @@ const CommunitySection = ({ onOpenCareerModal, onOpenFindStaffModal }) => {
   };
 
   return (
-    <section id="community" className="relative w-full overflow-visible pb-20 sm:pb-24 md:pb-32">
+    <section id="community" className="relative w-full overflow-visible pb-20 sm:pb-24 md:pb-32 bg-white">
       <div
         className="absolute top-0 left-0 right-0 h-full md:h-[70%] z-0"
         style={{
