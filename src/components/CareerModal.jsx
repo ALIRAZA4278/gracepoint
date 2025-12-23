@@ -88,7 +88,7 @@ const CareerModal = ({ isOpen, onClose }) => {
                   value={formData.fullName}
                   onChange={handleChange}
                   placeholder="Enter Your Full name Here"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
+                  className="w-full px-4 py-3 border text-black border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
                   required
                 />
               </div>
@@ -105,7 +105,7 @@ const CareerModal = ({ isOpen, onClose }) => {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="123-456-789"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
+                  className="w-full px-4 py-3 border text-black border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
                   required
                 />
               </div>
@@ -122,7 +122,7 @@ const CareerModal = ({ isOpen, onClose }) => {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="info@example.com"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
+                  className="w-full px-4 py-3 border text-black border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
                   required
                 />
               </div>
@@ -139,7 +139,7 @@ const CareerModal = ({ isOpen, onClose }) => {
                   value={formData.homeAddress}
                   onChange={handleChange}
                   placeholder="(City, State, ZIP)"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
+                  className="w-full px-4 py-3 border text-black border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
                 />
               </div>
 
@@ -153,7 +153,7 @@ const CareerModal = ({ isOpen, onClose }) => {
                   name="professionalTitle"
                   value={formData.professionalTitle}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors text-gray-500 appearance-none bg-white bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%3E%3Cpath%20fill%3D%22%230052A3%22%20d%3D%22M6%208L0%200h12z%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-right-4 bg-[length:12px_8px] pr-10"
+                  className="w-full px-4 py-3 border text-black border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors text-gray-500 appearance-none bg-white bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%3E%3Cpath%20fill%3D%22%230052A3%22%20d%3D%22M6%208L0%200h12z%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-right-4 bg-[length:12px_8px] pr-10"
                   required
                 >
                   <option value="">(RN, LPN, CNA, Med Tech, etc.)</option>
@@ -177,7 +177,7 @@ const CareerModal = ({ isOpen, onClose }) => {
                   value={formData.licenseNumber}
                   onChange={handleChange}
                   placeholder="Enter Your License Number & State"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
+                  className="w-full px-4 py-3 border text-black border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
                 />
               </div>
 
@@ -191,7 +191,7 @@ const CareerModal = ({ isOpen, onClose }) => {
                   name="yearsExperience"
                   value={formData.yearsExperience}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors text-gray-500 appearance-none bg-white bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%3E%3Cpath%20fill%3D%22%230052A3%22%20d%3D%22M6%208L0%200h12z%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-right-4 bg-[length:12px_8px] pr-10"
+                  className="w-full px-4 py-3 border text-black  border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors text-gray-500 appearance-none bg-white bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%3E%3Cpath%20fill%3D%22%230052A3%22%20d%3D%22M6%208L0%200h12z%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-right-4 bg-[length:12px_8px] pr-10"
                 >
                   <option value="">0</option>
                   <option value="0-1">0-1 years</option>
@@ -212,7 +212,7 @@ const CareerModal = ({ isOpen, onClose }) => {
                   name="assignmentType"
                   value={formData.assignmentType}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors text-gray-500 appearance-none bg-white bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%3E%3Cpath%20fill%3D%22%230052A3%22%20d%3D%22M6%208L0%200h12z%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-right-4 bg-[length:12px_8px] pr-10"
+                  className="w-full px-4 py-3 border text-black border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors text-gray-500 appearance-none bg-white bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%3E%3Cpath%20fill%3D%22%230052A3%22%20d%3D%22M6%208L0%200h12z%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-right-4 bg-[length:12px_8px] pr-10"
                 >
                   <option value="">(Per Diem, Travel, Contract, Temp-to-Hire, Direct Hire)</option>
                   <option value="per-diem">Per Diem</option>
@@ -233,7 +233,7 @@ const CareerModal = ({ isOpen, onClose }) => {
                   name="preferredAssignment"
                   value={formData.preferredAssignment}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors text-gray-500 appearance-none bg-white bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%3E%3Cpath%20fill%3D%22%230052A3%22%20d%3D%22M6%208L0%200h12z%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-right-4 bg-[length:12px_8px] pr-10"
+                  className="w-full px-4 py-3 border text-black border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors text-gray-500 appearance-none bg-white bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%3E%3Cpath%20fill%3D%22%230052A3%22%20d%3D%22M6%208L0%200h12z%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-right-4 bg-[length:12px_8px] pr-10"
                 >
                   <option value="">(Per Diem, Travel, Contract, Direct Hire)</option>
                   <option value="per-diem">Per Diem</option>
@@ -255,7 +255,7 @@ const CareerModal = ({ isOpen, onClose }) => {
                   value={formData.preferredLocation}
                   onChange={handleChange}
                   placeholder="Location Here"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
+                  className="w-full px-4 py-3 border text-black border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
                 />
               </div>
 
@@ -268,7 +268,7 @@ const CareerModal = ({ isOpen, onClose }) => {
                   <input
                     type="text"
                     placeholder="Upload Here"
-                    className="flex-1 px-4 py-3 border border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
+                    className="flex-1 px-4 py-3 border text-black border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
                     readOnly
                   />
                   <button
@@ -289,7 +289,7 @@ const CareerModal = ({ isOpen, onClose }) => {
                   <input
                     type="text"
                     placeholder="(CPR License, etc.)"
-                    className="flex-1 px-4 py-3 border border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
+                    className="flex-1 px-4 py-3 border text-black border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
                     readOnly
                   />
                   <button
@@ -311,7 +311,7 @@ const CareerModal = ({ isOpen, onClose }) => {
                   name="availability"
                   value={formData.availability}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors text-gray-500 appearance-none bg-white bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%3E%3Cpath%20fill%3D%22%230052A3%22%20d%3D%22M6%208L0%200h12z%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-right-4 bg-[length:12px_8px] pr-10"
+                  className="w-full px-4 py-3 border text-black border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors text-gray-500 appearance-none bg-white bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%3E%3Cpath%20fill%3D%22%230052A3%22%20d%3D%22M6%208L0%200h12z%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-right-4 bg-[length:12px_8px] pr-10"
                 >
                   <option value="">(Immediate, 2 Weeks, Flexible)</option>
                   <option value="immediate">Immediate</option>
@@ -331,7 +331,7 @@ const CareerModal = ({ isOpen, onClose }) => {
                   value={formData.additionalNotes}
                   onChange={handleChange}
                   rows="4"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors resize-none"
+                  className="w-full px-4 py-3 border text-black border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors resize-none"
                 ></textarea>
               </div>
 

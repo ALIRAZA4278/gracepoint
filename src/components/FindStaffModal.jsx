@@ -87,7 +87,7 @@ const FindStaffModal = ({ isOpen, onClose }) => {
                   value={formData.facilityName}
                   onChange={handleChange}
                   placeholder="Enter Facility/Organization Name Here"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
+                  className="w-full px-4 py-3 border text-black border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
                   required
                 />
               </div>
@@ -104,7 +104,7 @@ const FindStaffModal = ({ isOpen, onClose }) => {
                   value={formData.contactPerson}
                   onChange={handleChange}
                   placeholder="Enter Your Full name Here"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
+                  className="w-full px-4 py-3 border text-black border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
                   required
                 />
               </div>
@@ -121,7 +121,7 @@ const FindStaffModal = ({ isOpen, onClose }) => {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="123-456-789"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
+                  className="w-full px-4 py-3 border text-black border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
                   required
                 />
               </div>
@@ -138,7 +138,7 @@ const FindStaffModal = ({ isOpen, onClose }) => {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="info@example.com"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
+                  className="w-full px-4 py-3 border text-black border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
                   required
                 />
               </div>
@@ -155,7 +155,7 @@ const FindStaffModal = ({ isOpen, onClose }) => {
                   value={formData.facilityLocation}
                   onChange={handleChange}
                   placeholder="Enter Address Here"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
+                  className="w-full px-4 py-3 border text-black border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
                 />
               </div>
 
@@ -169,7 +169,7 @@ const FindStaffModal = ({ isOpen, onClose }) => {
                   name="positionType"
                   value={formData.positionType}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors text-gray-500 appearance-none bg-white bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%3E%3Cpath%20fill%3D%22%230052A3%22%20d%3D%22M6%208L0%200h12z%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-right-4 bg-[length:12px_8px] pr-10"
+                  className="w-full px-4 py-3 border text-black border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors text-gray-500 appearance-none bg-white bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%3E%3Cpath%20fill%3D%22%230052A3%22%20d%3D%22M6%208L0%200h12z%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-right-4 bg-[length:12px_8px] pr-10"
                   required
                 >
                   <option value="">(RN, LPN, CNA, Med Tech, etc.)</option>
@@ -191,7 +191,7 @@ const FindStaffModal = ({ isOpen, onClose }) => {
                   name="numberOfPositions"
                   value={formData.numberOfPositions}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors text-gray-500 appearance-none bg-white bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%3E%3Cpath%20fill%3D%22%230052A3%22%20d%3D%22M6%208L0%200h12z%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-right-4 bg-[length:12px_8px] pr-10"
+                  className="w-full px-4 py-3 border text-black border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors text-gray-500 appearance-none bg-white bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%3E%3Cpath%20fill%3D%22%230052A3%22%20d%3D%22M6%208L0%200h12z%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-right-4 bg-[length:12px_8px] pr-10"
                 >
                   <option value="">0</option>
                   <option value="1">1</option>
@@ -213,7 +213,7 @@ const FindStaffModal = ({ isOpen, onClose }) => {
                   name="assignmentType"
                   value={formData.assignmentType}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors text-gray-500 appearance-none bg-white bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%3E%3Cpath%20fill%3D%22%230052A3%22%20d%3D%22M6%208L0%200h12z%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-right-4 bg-[length:12px_8px] pr-10"
+                  className="w-full px-4 py-3 border text-black border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors text-gray-500 appearance-none bg-white bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%3E%3Cpath%20fill%3D%22%230052A3%22%20d%3D%22M6%208L0%200h12z%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-right-4 bg-[length:12px_8px] pr-10"
                 >
                   <option value="">(Per Diem, Travel, Contract, Temp-to-Hire, Direct Hire)</option>
                   <option value="per-diem">Per Diem</option>
@@ -236,7 +236,7 @@ const FindStaffModal = ({ isOpen, onClose }) => {
                     name="startDate"
                     value={formData.startDate}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
+                    className="w-full px-4 py-3 border text-black border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
                   />
                 </div>
               </div>
@@ -251,7 +251,7 @@ const FindStaffModal = ({ isOpen, onClose }) => {
                   name="lengthOfAssignment"
                   value={formData.lengthOfAssignment}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors text-gray-500 appearance-none bg-white bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%3E%3Cpath%20fill%3D%22%230052A3%22%20d%3D%22M6%208L0%200h12z%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-right-4 bg-[length:12px_8px] pr-10"
+                  className="w-full px-4 py-3 border text-black border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors text-gray-500 appearance-none bg-white bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%3E%3Cpath%20fill%3D%22%230052A3%22%20d%3D%22M6%208L0%200h12z%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-right-4 bg-[length:12px_8px] pr-10"
                 >
                   <option value="">(One shift, One week, 30 days, Ongoing, Other)</option>
                   <option value="one-shift">One shift</option>
@@ -273,7 +273,7 @@ const FindStaffModal = ({ isOpen, onClose }) => {
                   value={formData.additionalNotes}
                   onChange={handleChange}
                   rows="4"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors resize-none"
+                  className="w-full px-4 py-3 border text-black border-gray-300 rounded-md font-urbanist text-sm focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors resize-none"
                 ></textarea>
               </div>
 

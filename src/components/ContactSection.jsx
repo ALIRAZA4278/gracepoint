@@ -174,7 +174,7 @@ const ContactSection = () => {
                   id="email"
                   name="email"
                   placeholder="name@email.com"
-                  className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-md font-urbanist text-sm sm:text-base focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
+                  className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-md font-urbanist text-sm sm:text-base focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors text-black"
                 />
               </div>
 
@@ -188,7 +188,7 @@ const ContactSection = () => {
                   id="phone"
                   name="phone"
                   placeholder="123-456-789"
-                  className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-md font-urbanist text-sm sm:text-base focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors"
+                  className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-md font-urbanist text-sm sm:text-base focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors text-black"
                 />
               </div>
 
@@ -200,7 +200,7 @@ const ContactSection = () => {
                 <select
                   id="userType"
                   name="userType"
-                  className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-md font-urbanist text-sm sm:text-base focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors text-gray-500 appearance-none bg-white bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%3E%3Cpath%20fill%3D%22%230052A3%22%20d%3D%22M6%208L0%200h12z%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-right-3 sm:bg-right-4 bg-[length:10px_6px] sm:bg-[length:12px_8px] pr-8 sm:pr-10"
+                  className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-md font-urbanist text-sm sm:text-base focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors text-black appearance-none bg-white bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%3E%3Cpath%20fill%3D%22%230052A3%22%20d%3D%22M6%208L0%200h12z%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-right-3 sm:bg-right-4 bg-[length:10px_6px] sm:bg-[length:12px_8px] pr-8 sm:pr-10"
                 >
                   <option value="">Employer/Professional</option>
                   <option value="employer">Employer</option>
@@ -218,7 +218,7 @@ const ContactSection = () => {
                   name="message"
                   rows="4"
                   placeholder="Type your message/inquiry here....."
-                  className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-md font-urbanist text-sm sm:text-base focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors resize-none"
+                  className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-md font-urbanist text-sm sm:text-base focus:outline-none focus:border-[#0052A3] focus:ring-1 focus:ring-[#0052A3] transition-colors resize-none text-black"
                 ></textarea>
               </div>
 
