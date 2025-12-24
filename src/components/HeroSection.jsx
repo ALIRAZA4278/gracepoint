@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const HeroSection = ({ onOpenCareerModal, onOpenFindStaffModal }) => {
   return (
-    <section id="home" className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[800px] xl:h-[900px] flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[650px] xl:h-[700px] flex items-center justify-center overflow-hidden">
       <motion.div
         initial={{ scale: 1.1, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}

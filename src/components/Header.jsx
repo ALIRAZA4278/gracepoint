@@ -10,7 +10,7 @@ const Header = ({ onOpenCareerModal, onOpenFindStaffModal }) => {
   return (
     <header className="w-full">
       {/* Top Bar - Social & Contact */}
-      <div className="bg-[#0052A3] text-white py-2.5 sm:py-3 px-4 sm:px-6 md:px-8">
+      <div className="bg-[#0052A3] text-white py-1.5 sm:py-2 px-4 sm:px-6 md:px-8">
         <div className="max-w-[1400px] mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-3">
           {/* Social Media - Hidden on mobile */}
           <div className="hidden sm:flex items-center gap-3 md:gap-4">
@@ -75,7 +75,7 @@ const Header = ({ onOpenCareerModal, onOpenFindStaffModal }) => {
 
       {/* Main Navigation */}
       <div className="bg-white shadow-sm">
-        <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-3 md:py-4 flex justify-between items-center">
+        <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-2 md:py-3 flex justify-between items-center">
           <Link href="/" className="flex-shrink-0">
             <Image
               src="/logo.png"

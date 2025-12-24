@@ -11,6 +11,7 @@ import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import CareerModal from '@/components/CareerModal';
 import FindStaffModal from '@/components/FindStaffModal';
+import ScrollToTop from '@/components/ScrollToTop';
 
 const page = () => {
   const [isCareerModalOpen, setIsCareerModalOpen] = useState(false);
@@ -50,6 +51,9 @@ const page = () => {
       {/* Modals */}
       <CareerModal isOpen={isCareerModalOpen} onClose={() => setIsCareerModalOpen(false)} />
       <FindStaffModal isOpen={isFindStaffModalOpen} onClose={() => setIsFindStaffModalOpen(false)} />
+
+      {/* Scroll to Top Button */}
+      <ScrollToTop />
     </div>
   )
 }
