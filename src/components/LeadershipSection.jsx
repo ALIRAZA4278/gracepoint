@@ -41,9 +41,19 @@ const LeadershipSection = ({ onOpenCareerModal, onOpenFindStaffModal }) => {
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
+              className="text-sm sm:text-base md:text-lg font-urbanist leading-relaxed mb-3 sm:mb-4 drop-shadow-lg"
+            >
+              GracePoint Medical Staffing is proudly led by siblings <span className="font-bold">Benjamin Boateng and Vera Boateng</span>, whose shared passion for service and commitment to excellence inspired the creation of the agency. Growing up with a strong sense of responsibility, care, and community, they recognized the need for a staffing partner that truly values both the professionals providing care and the people receiving it.
+            </motion.p>
+
+            <motion.p
+              initial={{ y: 20, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
               className="text-sm sm:text-base md:text-lg font-urbanist leading-relaxed mb-4 sm:mb-6 md:mb-8 drop-shadow-lg"
             >
-              GracePoint Medical Staffing is proudly led by siblings <span className="font-bold">Benjamin Boateng and Vera Boateng</span>, whose shared passion for service and commitment to excellence inspired the creation of the agency. Growing up with a strong sense of responsibility, care, and community, they recognized the need for a staffing partner that truly values both the professionals providing care and the people receiving it. Together, they lead with a people-first mindset, prioritizing integrity, compassion, and reliability in every placement. Their hands-on leadership approach ensures healthcare facilities, private clients, and caregivers receive the support, respect, and consistency needed to thrive. Under their guidance, GracePoint continues to raise the standard of healthcare and caregiving staffing through trust, accountability, and purpose-driven leadership.
+              Together, they lead with a people-first mindset, prioritizing integrity, compassion, and reliability in every placement. Their hands-on leadership approach ensures healthcare facilities, private clients, and caregivers receive the support, respect, and consistency needed to thrive. Under their guidance, GracePoint continues to raise the standard of healthcare and caregiving staffing through trust, accountability, and purpose-driven leadership.
             </motion.p>
 
             <motion.div
