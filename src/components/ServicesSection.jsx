@@ -134,7 +134,7 @@ const ServicesSection = ({ onOpenCareerModal, onOpenFindStaffModal }) => {
 
               <motion.div
                 initial={{ y: 20, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
+                whileInView={{ y: 0, opacity: 1 }} 
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 + 0.4 }}
                 className="absolute top-[65%] sm:top-[68%] md:top-[70%] left-0 right-0 bg-[#0052A3] text-white px-4 sm:px-5 md:px-6 py-4 sm:py-5 md:py-4 mx-3 sm:mx-4 h-auto min-h-[180px] max-h-[260px] flex flex-col shadow-2xl rounded-lg overflow-y-auto"
