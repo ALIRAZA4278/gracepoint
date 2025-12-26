@@ -7,19 +7,23 @@ const CommunitySection = ({ onOpenCareerModal, onOpenFindStaffModal }) => {
   const impacts = [
     {
       id: '01',
-      description: 'Partner with healthcare training programs to support the next generation of caregivers'
+      title: 'Partnering With Healthcare Training Programs',
+      description: 'We collaborate with healthcare training programs and educational institutions to support the development of the next generation of caregivers and medical professionals.'
     },
     {
       id: '02',
-      description: 'Sponsor local job fairs and healthcare education initiatives'
+      title: 'Sponsoring Local Job Fairs & Education Initiatives',
+      description: 'We actively sponsor and participate in local job fairs and healthcare education initiatives to create access to employment opportunities and industry awareness.'
     },
     {
       id: '03',
-      description: 'Provide mentorship and career resources for new healthcare professionals'
+      title: 'Mentorship & Career Development',
+      description: 'We provide mentorship, guidance, and career resources to new healthcare professionals and caregivers, helping them grow with confidence and long-term stability.'
     },
     {
       id: '04',
-      description: 'Support underserved communities by ensuring access to skilled healthcare staff'
+      title: 'Supporting Underserved Communities',
+      description: 'We work to ensure underserved communities have access to skilled, compassionate healthcare and caregiving staff, bridging gaps in care where support is needed most.'
     }
   ];
 
@@ -72,13 +76,16 @@ const CommunitySection = ({ onOpenCareerModal, onOpenFindStaffModal }) => {
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="lg:max-w-[600px]"
+            className="lg:max-w-[700px]"
           >
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold font-urbanist text-white mb-3 sm:mb-4 drop-shadow-2xl">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold font-urbanist text-white mb-4 sm:mb-6 drop-shadow-2xl">
               Community Impact
             </h2>
-            <p className="text-sm sm:text-base md:text-lg font-urbanist text-white leading-relaxed border-l-4 border-white pl-3 sm:pl-4 drop-shadow-lg">
-              GracePoint Medical Staffing is committed to making a difference not only in healthcare facilities but also in the communities we serve.
+            <p className="text-sm sm:text-base md:text-lg font-urbanist text-white leading-relaxed border-l-4 border-white pl-4 sm:pl-5 drop-shadow-lg mb-4">
+              GracePoint Medical Staffing is committed to making a meaningful difference not only within healthcare facilities, but also in the lives of caregivers, families, and the communities we serve. We believe quality care starts with supporting the people who provide it, empowering caregivers and healthcare professionals with opportunities, respect, and ongoing support.
+            </p>
+            <p className="text-sm sm:text-base md:text-lg font-urbanist text-white leading-relaxed border-l-4 border-white pl-4 sm:pl-5 drop-shadow-lg">
+              Through reliable staffing, compassionate in-home care, and community-focused partnerships, we help ensure individuals receive the care they need while creating employment opportunities that strengthen local communities. Our impact goes beyond placements, we strive to build trust, promote dignity, and contribute to healthier, more connected communities through purpose-driven service.
             </p>
           </motion.div>
 
@@ -122,7 +129,7 @@ const CommunitySection = ({ onOpenCareerModal, onOpenFindStaffModal }) => {
               variants={cardVariants}
               whileHover={{ y: -10, scale: 1.03 }}
               transition={{ duration: 0.3 }}
-              className="relative bg-white p-5 sm:p-6 rounded-lg shadow-2xl hover:shadow-[0_25px_50px_-12px_rgba(232,89,136,0.4)] transition-all duration-500 overflow-hidden"
+              className="relative bg-white p-6 sm:p-7 md:p-8 rounded-lg shadow-2xl hover:shadow-[0_25px_50px_-12px_rgba(232,89,136,0.4)] transition-all duration-500 overflow-hidden min-h-[280px] flex flex-col"
             >
               <motion.div
                 initial={{ scale: 0, rotate: 180, opacity: 0 }}
@@ -139,22 +146,34 @@ const CommunitySection = ({ onOpenCareerModal, onOpenFindStaffModal }) => {
                   className="w-full h-full object-contain"
                 />
               </motion.div>
-              <div className="relative">
-                <motion.h3
+              <div className="relative flex-1 flex flex-col">
+                <motion.div
                   initial={{ x: -20, opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 + 0.4 }}
-                  className="text-[#E85988] text-2xl sm:text-3xl font-bold font-urbanist mb-3 sm:mb-4"
+                  className="flex items-center gap-2 mb-3"
                 >
-                  {impact.id}
-                </motion.h3>
+                  <h3 className="text-[#E85988] text-3xl sm:text-4xl font-bold font-urbanist">
+                    {impact.id}
+                  </h3>
+                  <span className="text-[#0052A3] text-xl font-bold">—</span>
+                </motion.div>
+                <motion.h4
+                  initial={{ x: -20, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 + 0.45 }}
+                  className="text-[#0052A3] text-lg sm:text-xl font-bold font-urbanist mb-4 leading-tight"
+                >
+                  {impact.title}
+                </motion.h4>
                 <motion.p
                   initial={{ y: 10, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 + 0.5 }}
-                  className="text-gray-900 font-urbanist text-sm sm:text-base leading-relaxed"
+                  className="text-gray-700 font-urbanist text-sm sm:text-base leading-relaxed flex-1"
                 >
                   {impact.description}
                 </motion.p>

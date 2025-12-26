@@ -42,7 +42,7 @@ const AboutSection = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-xl sm:text-2xl font-semibold font-urbanist text-gray-900"
             >
-              Welcome To Gracepoint
+              Welcome to GracePoint Medical Staffing
             </motion.h3>
 
             <motion.p
@@ -52,7 +52,7 @@ const AboutSection = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-sm sm:text-base text-gray-700 font-urbanist leading-relaxed"
             >
-              GracePoint Medical Staffing is a premier healthcare staffing agency built on the principles of professionalism, reliability, and excellence. We specialize in providing healthcare facilities with highly qualified professionals who can adapt quickly, deliver quality care, and support patient outcomes.
+              GracePoint Medical Staffing is a premier healthcare and caregiving staffing agency built on the principles of professionalism, reliability, and excellence. We specialize in providing highly qualified healthcare professionals to medical facilities, senior living communities, private homes, and individual clients. From skilled clinical support to compassionate in-home caregivers, our professionals adapt quickly, deliver quality care, and support positive outcomes in every setting. Whether staffing facilities or supporting families privately, we are committed to dependable service and exceptional care.
             </motion.p>
 
             <div className="space-y-3 sm:space-y-4">
@@ -68,7 +68,7 @@ const AboutSection = () => {
                   OUR MISSION:
                 </h4>
                 <p className="text-sm sm:text-base text-gray-700 font-urbanist leading-relaxed pl-3">
-                  To provide healthcare facilities with exceptional staffing solutions by matching the right talent to the right opportunities, ensuring patient care is never compromised.
+                  To provide healthcare facilities, private clients, and families with exceptional staffing solutions by matching the right talent to the right opportunities, ensuring quality care, safety, and compassion are never compromised.
                 </p>
               </motion.div>
 
@@ -84,7 +84,7 @@ const AboutSection = () => {
                   OUR VISION:
                 </h4>
                 <p className="text-sm sm:text-base text-gray-700 font-urbanist leading-relaxed pl-3">
-                  To be the premier medical staffing partner recognized nationwide for reliability, consistency, and quality-driven results.
+                  To be the premier medical and caregiving staffing partner recognized nationwide for reliability, consistency, and quality-driven results across both facility-based and private care environments.
                 </p>
               </motion.div>
 

@@ -43,7 +43,7 @@ const LeadershipSection = ({ onOpenCareerModal, onOpenFindStaffModal }) => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-sm sm:text-base md:text-lg font-urbanist leading-relaxed mb-4 sm:mb-6 md:mb-8 drop-shadow-lg"
             >
-              GracePoint is proudly led by two devoted siblings, <span className="font-bold">Bernard and Vera</span>, whose shared vision is to raise the standard of healthcare staffing. Their commitment to excellence and people-first leadership ensures that both healthcare facilities and professionals receive the support they need to thrive.
+              GracePoint Medical Staffing is proudly led by siblings <span className="font-bold">Benjamin Boateng and Vera Boateng</span>, whose shared passion for service and commitment to excellence inspired the creation of the agency. Growing up with a strong sense of responsibility, care, and community, they recognized the need for a staffing partner that truly values both the professionals providing care and the people receiving it. Together, they lead with a people-first mindset, prioritizing integrity, compassion, and reliability in every placement. Their hands-on leadership approach ensures healthcare facilities, private clients, and caregivers receive the support, respect, and consistency needed to thrive. Under their guidance, GracePoint continues to raise the standard of healthcare and caregiving staffing through trust, accountability, and purpose-driven leadership.
             </motion.p>
 
             <motion.div
@@ -87,7 +87,7 @@ const LeadershipSection = ({ onOpenCareerModal, onOpenFindStaffModal }) => {
             >
               <Image
                 src="/home/leadership.png"
-                alt="Bernard and Vera - Leadership Team"
+                alt="Benjamin Boateng and Vera Boateng - Leadership Team"
                 fill
                 className="object-cover object-top"
                 priority

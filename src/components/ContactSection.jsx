@@ -38,8 +38,11 @@ const ContactSection = () => {
               <p className="text-lg sm:text-xl font-semibold font-urbanist text-gray-900 mb-4 sm:mb-6">
                 Let's Do Something Great Together
               </p>
-              <p className="text-sm sm:text-base font-urbanist text-gray-700 leading-relaxed">
-                We're here to help — whether you're a facility looking for staff or a professional searching for your next role.
+              <p className="text-sm sm:text-base font-urbanist text-gray-700 leading-relaxed mb-3">
+                We&apos;re here to help, whether you&apos;re a healthcare facility in need of dependable staff, a family seeking compassionate caregivers for in-home or private care, or a healthcare professional or caregiver searching for your next opportunity.
+              </p>
+              <p className="text-sm sm:text-base font-urbanist text-gray-700 leading-relaxed font-medium">
+                At GracePoint Medical Staffing, we make meaningful connections that support quality care, reliable staffing, and lasting relationships. Reach out today and let&apos;s work together to meet your staffing or career needs with professionalism, care, and purpose.
               </p>
             </motion.div>
 

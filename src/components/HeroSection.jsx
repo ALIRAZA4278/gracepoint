@@ -34,7 +34,7 @@ const HeroSection = ({ onOpenCareerModal, onOpenFindStaffModal }) => {
           transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
           className="font-urbanist text-sm sm:text-base md:text-lg lg:text-xl mb-6 sm:mb-8 md:mb-10 max-w-[90%] sm:max-w-[80%] md:max-w-[700px] lg:max-w-[950px] mx-auto leading-relaxed drop-shadow-lg"
         >
-          GracePoint Medical Staffing provides reliable, flexible, and professional healthcare staffing solutions. Whether you're a facility in need of skilled staff or a healthcare professional seeking new opportunities, we make the connection seamless.
+          GracePoint Medical Staffing provides reliable, flexible, and professional staffing solutions for healthcare facilities, private clients, and families. Whether you&apos;re a facility in need of skilled staff, a family seeking compassionate caregivers for in-home support and companionship, or a healthcare professional exploring new opportunities, we make the connection seamless.
         </motion.p>
 
         <motion.div

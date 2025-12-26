@@ -8,37 +8,37 @@ const ServicesSection = ({ onOpenCareerModal, onOpenFindStaffModal }) => {
     {
       id: '01',
       title: 'Per Diem Staffing',
-      description: 'Last-minute coverage for shifts to ensure patient care is never interrupted.',
+      description: 'Flexible, last-minute shift coverage for healthcare facilities, ensuring continuity of care and uninterrupted support for patients and residents.',
       image: '/home/service1.png',
     },
     {
       id: '02',
       title: 'Travel Assignments',
-      description: 'Nationwide contracts for professionals seeking flexibility and adventure.',
+      description: 'Nationwide placement opportunities for healthcare professionals and caregivers seeking flexibility, competitive assignments, and new experiences across diverse care settings.',
       image: '/home/service2.png',
     },
     {
       id: '03',
       title: 'Contract & Temp-to-Hire',
-      description: 'Short-term coverage with the option to extend or hire permanently.',
+      description: 'Short-term and long-term staffing solutions with the option to extend assignments or transition professionals into permanent roles, ideal for both facilities and private care needs.',
       image: '/home/service3.png',
     },
     {
       id: '04',
       title: 'Direct Hire Placement',
-      description: 'Long-term staffing solutions for facilities looking to fill permanent roles.',
+      description: 'Permanent staffing solutions for healthcare facilities and private organizations seeking reliable, long-term professionals who align with their care standards and culture.',
       image: '/home/service4.png',
     },
     {
       id: '05',
       title: 'Private Duty & Personal Care Staffing',
-      description: 'Professional caregivers for in-home or private care settings.',
+      description: 'Compassionate, professional caregivers providing in-home support, personal care, and companionship for individuals and families in private settings.',
       image: '/home/service5.png',
     },
     {
       id: '06',
       title: 'Specialized Roles',
-      description: 'Including RNs, LPNs, CNAs, Med Techs, Therapists, and healthcare administrative staff.',
+      description: 'Staffing across a wide range of healthcare and caregiving positions, including Registered Nurses (RNs), Licensed Practical Nurses (LPNs), Certified Nursing Assistants (CNAs), Medication Technicians (Med Techs), Home Health Aides (HHAs), Companions, Therapists, and healthcare administrative professionals.',
       image: '/home/service6.png',
     },
   ];
@@ -92,7 +92,7 @@ const ServicesSection = ({ onOpenCareerModal, onOpenFindStaffModal }) => {
             Our Staffing Solutions
           </p>
           <p className="text-sm sm:text-base md:text-lg font-urbanist text-gray-700 max-w-[90%] sm:max-w-[700px] md:max-w-[900px] mx-auto px-4">
-            GracePoint offers flexible staffing solutions tailored to the unique needs of healthcare providers.
+            GracePoint Medical Staffing offers flexible, dependable staffing solutions tailored to the unique needs of healthcare facilities, private clients, and families. We provide qualified healthcare professionals and compassionate caregivers who can seamlessly support a wide range of care environments. Whether you are a facility seeking reliable clinical staff, or a family in need of in-home caregiving and companionship, our staffing solutions are designed to ensure continuity of care, safety, and peace of mind. From short-term coverage to long-term placements, we match the right professionals with the right opportunities, always prioritizing quality, professionalism, and compassionate care.
           </p>
         </motion.div>
 
@@ -108,7 +108,7 @@ const ServicesSection = ({ onOpenCareerModal, onOpenFindStaffModal }) => {
               key={service.id}
               variants={itemVariants}
               whileHover={{ y: -10, transition: { duration: 0.3 } }}
-              className="relative overflow-visible shadow-2xl hover:shadow-[0_30px_60px_-12px_rgba(0,82,163,0.5)] transition-all duration-500 mb-24 sm:mb-28 md:mb-32 rounded-lg"
+              className="relative overflow-visible shadow-2xl hover:shadow-[0_30px_60px_-12px_rgba(0,82,163,0.5)] transition-all duration-500 mb-32 sm:mb-36 md:mb-40 lg:mb-44 rounded-lg"
             >
               <div className="relative h-[240px] sm:h-[260px] md:h-[280px] lg:h-[320px] overflow-hidden rounded-t-lg">
                 <Image
@@ -134,7 +134,7 @@ const ServicesSection = ({ onOpenCareerModal, onOpenFindStaffModal }) => {
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 + 0.4 }}
-                className="absolute top-[65%] sm:top-[68%] md:top-[70%] left-0 right-0 bg-[#0052A3] text-white px-4 sm:px-5 md:px-6 py-5 sm:py-6 md:py-8 mx-3 sm:mx-4 min-h-[160px] sm:min-h-[170px] md:h-[180px] flex flex-col shadow-2xl rounded-lg"
+                className="absolute top-[65%] sm:top-[68%] md:top-[70%] left-0 right-0 bg-[#0052A3] text-white px-4 sm:px-5 md:px-6 py-4 sm:py-5 md:py-6 mx-3 sm:mx-4 h-[220px] sm:h-[240px] md:h-[250px] lg:h-[260px] flex flex-col shadow-2xl rounded-lg overflow-hidden"
               >
                 <h3 className="text-lg sm:text-xl md:text-2xl font-bold font-urbanist mb-2 sm:mb-3 italic border-b border-[#E85988] pb-2 sm:pb-3 inline-block">
                   {service.title}

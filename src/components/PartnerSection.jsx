@@ -28,8 +28,14 @@ const PartnerSection = ({ onOpenFindStaffModal }) => {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold font-urbanist text-[#0052A3] mb-4 sm:mb-5 md:mb-6">
             Why Partner With Us?
           </h2>
-          <p className="text-sm sm:text-base md:text-lg font-urbanist text-gray-900 max-w-[90%] sm:max-w-[700px] md:max-w-[900px] mx-auto px-4">
-            Healthcare facilities need dependable staffing solutions — and that's where GracePoint steps in.
+          <p className="text-sm sm:text-base md:text-lg font-urbanist text-gray-900 max-w-[90%] sm:max-w-[700px] md:max-w-[1000px] mx-auto px-4 leading-relaxed">
+            Healthcare facilities, families, and private clients need dependable staffing solutions and that&apos;s where GracePoint Medical Staffing steps in. We bridge the gap between qualified professionals and those who rely on compassionate, consistent care.
+          </p>
+          <p className="text-sm sm:text-base md:text-lg font-urbanist text-gray-900 max-w-[90%] sm:max-w-[700px] md:max-w-[1000px] mx-auto px-4 leading-relaxed mt-4">
+            For facilities, we provide reliable staffing support that helps maintain continuity of care, meet operational demands, and uphold quality standards. For families and private clients, we offer trusted caregivers who deliver personalized in-home care, companionship, and peace of mind. For healthcare professionals and caregivers, we create meaningful opportunities that respect their skills, availability, and career goals.
+          </p>
+          <p className="text-sm sm:text-base md:text-lg font-urbanist text-gray-900 max-w-[90%] sm:max-w-[700px] md:max-w-[1000px] mx-auto px-4 leading-relaxed mt-4 font-semibold">
+            At GracePoint, partnership means reliability, flexibility, and a people-first approach, ensuring everyone we serve feels supported, valued, and confident in the care provided.
           </p>
         </motion.div>
 
