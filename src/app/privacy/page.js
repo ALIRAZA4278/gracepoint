@@ -294,7 +294,7 @@ const PrivacyPage = () => {
                 </li>
               </ul>
               <p className="text-gray-900 font-urbanist text-sm sm:text-base md:text-lg leading-relaxed mt-2 sm:mt-3">
-                To exercise any of these rights, please contact us at info@gracepoint.com or call +921 236 574 4.
+                To exercise any of these rights, please contact us at info@gracepoint.com or call +1 (678) 910-8466.
               </p>
             </div>
 
@@ -345,7 +345,7 @@ const PrivacyPage = () => {
                   <strong>Grace Point Medical Staffing</strong><br />
                   12 Unity Crescent<br />
                   East Legon, Accra, Ghana<br />
-                  <strong>Phone:</strong> +921 236 574 4<br />
+                  <strong>Phone:</strong> +1 (678) 910-8466<br />
                   <strong>Email:</strong> info@gracepoint.com
                 </p>
               </div>

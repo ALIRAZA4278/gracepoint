@@ -70,10 +70,10 @@ const ContactSection = () => {
                     Phone:
                   </h3>
                   <a
-                    href="tel:+9212365744"
+                    href="tel:+16789108466"
                     className="text-sm sm:text-base font-urbanist text-gray-700 hover:text-[#0052A3] transition-colors"
                   >
-                    +921 236 574 4
+                    +1 (678) 910-8466
                   </a>
                 </div>
               </motion.div>

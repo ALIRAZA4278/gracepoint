@@ -100,12 +100,12 @@ const AboutSection = () => {
                   NEED ASSISTANCE?
                 </h4>
                 <motion.a
-                  href="tel:+9212365744"
+                  href="tel:+16789108466"
                   whileHover={{ scale: 1.05, color: '#0052A3' }}
                   className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 hover:text-[#0052A3] transition-colors inline-block drop-shadow-md"
                   style={{ fontFamily: 'serif' }}
                 >
-                  +921 236 574 4
+                  +1 (678) 910-8466
                 </motion.a>
               </motion.div>
             </div>
