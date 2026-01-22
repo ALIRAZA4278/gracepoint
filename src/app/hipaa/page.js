@@ -91,12 +91,12 @@ const HipaaPage = () => {
             </p>
             <div className="bg-[#0052A3]/5 p-4 sm:p-5 rounded-lg mb-4 sm:mb-6 ">
               <div className="text-gray-900 font-urbanist text-xs sm:text-sm md:text-base leading-relaxed space-y-1">
-                <p><strong>Sunrise Senior Living</strong></p>
+                <p><strong>Grace Point Medical Staffing</strong></p>
                 <p>Attn: Corporate Privacy Officer</p>
-                <p>7902 Westpark Drive</p>
-                <p>McLean, VA 22102</p>
-                <p><strong>Phone:</strong> 703-273-7500</p>
-                <p><strong>Fax:</strong> 888-882-3901</p>
+                <p>2033 Sombrero Way SE,</p>
+                <p>Atlanta, GA 30316</p>
+                <p><strong>Phone:</strong> +1 (678) 910-8466</p>
+                <p><strong>Email:</strong> info@gracepoint.com</p>
               </div>
             </div>
             <p className="text-gray-900 font-urbanist text-sm sm:text-base md:text-lg leading-relaxed mb-2 sm:mb-3">
@@ -165,7 +165,7 @@ const HipaaPage = () => {
             className="mt-8 sm:mt-10 md:mt-12 pt-6 sm:pt-8 border-t border-gray-200 bg-[#0052A3]/5 p-4 sm:p-6 rounded-lg shadow-lg"
           >
             <p className="text-gray-900 font-urbanist text-sm sm:text-base md:text-lg leading-relaxed">
-              If you have questions regarding these Terms of Use, please contact us at Email: <a href="mailto:legal@qualitycare.com" className="text-[#0052A3] hover:underline font-semibold">legal@qualitycare.com</a> Phone: (555) 123-4567
+              If you have questions regarding these Terms of Use, please contact us at Email: <a href="mailto:info@gracepoint.com" className="text-[#0052A3] hover:underline font-semibold">info@gracepoint.com</a> Phone: +1 (678) 910-8466
             </p>
           </motion.div>
         </div>

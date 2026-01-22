@@ -19,25 +19,25 @@ const Footer = () => {
               href="/terms"
               className="text-white font-urbanist text-xs sm:text-sm md:text-base hover:text-gray-200 transition-colors"
             >
-              Terms & Condition
+              TERMS & CONDITION
             </Link>
             <Link
               href="/privacy"
               className="text-white font-urbanist text-xs sm:text-sm md:text-base hover:text-gray-200 transition-colors"
             >
-              Privacy Policy
+              PRIVACY POLICY
             </Link>
             <Link
               href="/accessibility"
               className="text-white font-urbanist text-xs sm:text-sm md:text-base hover:text-gray-200 transition-colors"
             >
-              Accessibility
+              ACCESSIBILITY
             </Link>
             <Link
               href="/hipaa"
               className="text-white font-urbanist text-xs sm:text-sm md:text-base hover:text-gray-200 transition-colors"
             >
-              Hipaa Policy
+              HIPAA POLICY
             </Link>
           </div>
         </div>

@@ -62,11 +62,11 @@ const AccessibilityPage = () => {
             className="bg-[#0052A3]/5  transition-shadow duration-300 p-4"
           >
             <p className="text-gray-900 font-urbanist text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed mb-2">
-              <strong>Email:</strong> grace@gracepoint.com
+              <strong>Email:</strong> info@gracepoint.com
             </p>
 
             <p className="text-gray-900 font-urbanist text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed">
-              <strong>Phone:</strong> 703-273-7500 (request to speak with our legal department)
+              <strong>Phone:</strong> +1 (678) 910-8466
             </p>
           </motion.div>
         </div>

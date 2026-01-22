@@ -37,15 +37,6 @@ const TermsPage = () => {
       {/* Content Section */}
       <section className="w-full py-8 sm:py-12 md:py-16 bg-white">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8">
-          {/* Effective Date */}
-          <motion.p
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            className="text-gray-900 font-urbanist text-sm sm:text-base md:text-lg mb-6 sm:mb-8"
-          >
-            <strong>Effective Date:</strong> December 21, 2025
-          </motion.p>
 
           {/* 1. Services Provided */}
           <motion.div

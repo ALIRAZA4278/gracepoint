@@ -108,9 +108,6 @@ const PrivacyPage = () => {
               transition={{ duration: 0.6 }}
               className="lg:col-span-3"
             >
-              <p className="text-gray-900 font-urbanist text-sm sm:text-base md:text-lg mb-6 sm:mb-8">
-                <strong>Effective Date:</strong> December 21, 2025
-              </p>
 
           {/* Information We Collect */}
           {activeSection === 'info-collect' && (
@@ -343,8 +340,8 @@ const PrivacyPage = () => {
               <div className="bg-[#0052A3]/5 p-4 sm:p-6 rounded-lg">
                 <p className="text-gray-900 font-urbanist text-sm sm:text-base md:text-lg leading-relaxed">
                   <strong>Grace Point Medical Staffing</strong><br />
-                  12 Unity Crescent<br />
-                  East Legon, Accra, Ghana<br />
+                  2033 Sombrero Way SE,<br />
+                  Atlanta, GA 30316<br />
                   <strong>Phone:</strong> +1 (678) 910-8466<br />
                   <strong>Email:</strong> info@gracepoint.com
                 </p>

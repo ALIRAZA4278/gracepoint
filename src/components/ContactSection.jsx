@@ -132,8 +132,8 @@ const ContactSection = () => {
                     Address:
                   </h3>
                   <p className="text-sm sm:text-base font-urbanist text-gray-700 leading-relaxed">
-                    GracePoint Medical Staffing 12 Unity Crescent<br />
-                    East Legon, Accra, Ghana
+                    2033 Sombrero Way SE,<br />
+                    Atlanta, GA 30316
                   </p>
                 </div>
               </motion.div>
